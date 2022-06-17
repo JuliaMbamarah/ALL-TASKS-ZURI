@@ -1,74 +1,226 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Responsiveness.html</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiveness</title>
+    <title>Responsiveness Page</title>
 </head>
-  <style>
+<style>
     *{
-      margin:0;
-      padding:0;
-      box-sizing: border-box;
+        background-color: hsl(0, 100%, 74%);
+       background-image: url(desktop.png);
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
     }
-    
-    body{
-      background-color:hsl(0, 100%, 74%);
-      background image
-    }
+
 
     main{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
     }
-h2{
-  color: hsl(246, 25%, 77%);
-    
-    </style>
- <body>
-    <main>
-    <div id="left">
-    <h2>Learn to code by watching others</h2>
-<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-</div>
 
-    <div id="right">
-    <div>
-    <h5>Try it free 7days then $20/mo. thereafter</h5>
-    </div>
-      
-    <div>
-    <form>
-      <label for="firstname"> </label> <br/>  
-              <input type="text" id="firstname" placeholder="First Name" name="firstname"/> <br/>  
-   <label for="lastname"></label>  
-              <input type="text" id="lastname" name="lastname" placeholder= "Last Name"/> <br/>  
-  <label 
-             for="email"</label>
-              <input type="email" id="email" name="email" placeholder="Email Address" /> <br/>  
-   <label for="password"></label>  
-              <input type="password" id="password" name="password" placeholder="Password"/> <br/>  
-     <div> <button>CLAIM YOUR FREE TRIAL</button></div>
-      
-      <p>By clicking the button, you are agreeing to our Terms and services</p>
- </form>  
-    </div>
-    </div>
-<!-- partial -->
-  
+    #secondbox{
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center; 
+        width: 50%;    
+    }
+
+    h2{
+        color: white;
+        font-family: poppins;
+        padding: 3px;
+    }
+
+    .one{
+        color: white;
+        font-family: poppins;
+        font-size: 16px; 
+        padding: 3px; 
+        margin: 5px;
+    }
+
+    #firstbox{
+        width: 50%;
+    }
+
+    .two{
+        color: hsl(246, 25%, 77%);
+        font-family: poppins;
+        font-size: 8px; 
+        text-align: center; 
+        background-color: white;
+
+    }
+    h5{
+        background-color: hsl(248, 32%, 49%);
+        padding: 3px;
+        margin: 4px;
+        color: white;
+        text-align: center;
+    }
+
+    button{
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        padding: 3px;
+        margin: 0px;
+        border-radius: 2px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form{
+        background-color: white;
+        margin: 3px;
+        padding: 3px;
+    }
+
+    div #under{
+        background-color: white;
+    }
+
+    form{
+        background-color: white;
+    }
+
+    @media screen and (max-width:375px) {
+        *{
+        background-color: hsl(0, 100%, 74%);
+       background-image: url(mobile.png);
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
+    }
+
+    #secondbox{
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center; 
+        width: 50%;    
+    }
+
+    h2{
+        color: white;
+        font-family: poppins;
+        padding: 3px;
+    }
+
+    .one{
+        color: white;
+        font-family: poppins;
+        font-size: 10px; 
+        padding: 3px; 
+        margin: 5px;
+    }
+
+    #firstbox{
+        width: 50%;
+    }
+
+    .two{
+        color: hsl(246, 25%, 77%);
+        font-family: poppins;
+        font-size: 8px; 
+        text-align: center; 
+        background-color: white;
+
+    }
+    h5{
+        background-color: hsl(248, 32%, 49%);
+        padding: 3px;
+        margin: 4px;
+        color: white;
+        text-align: center;
+    }
+
+    button{
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        padding: 3px;
+        margin: 0px;
+        border-radius: 2px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form{
+        background-color: white;
+        margin: 3px;
+        padding: 3px;
+    }
+
+    div #under{
+        background-color: white;
+    }
+
+    form{
+        background-color: white;
+    }
+    
+    }
+
+   
+</style>
+
+<body>
+    <main>
+        <div id="firstbox">
+            <h2> <b> Learn to code by watching others</b></h3>
+            <p class="one">See how experienced developers solve problems
+                in real time. Watching scripted tutorials is 
+                great, but understanding how developers think is
+                invaluable.
+            </p>
+        </div>
+        <div id="secondbox">
+            <div><h5>Try it free 7 days then $20/mo. thereafter</h4></div>
+            <div class="under">
+                <form action="">
+                    <div class="form">
+                    <label for="Firstname"></label>
+                    <input class="form" placeholder="First Name" type="text">
+                    </div>
+
+                    <div class="form">   
+                    <label for="Last Name"></label>
+                    <input class="form" placeholder="Last Name" type="text">
+                    </div>
+
+                    <div class="form">
+                    <label for="email"></label>
+                    <input class="form" placeholder="Email Address" type="email">
+                    </div>
+
+                    <div class="form">
+                    <label for="password"></label>
+                    <input class="form" placeholder="Password" type="password">
+                    </div>
+
+                    <div>
+                    <button>CLAIM YOUR FREE TRIAL</button>
+                    </div>
+
+                    <div>
+                    <p class="two"> By clicking the button, you are agreeing to our Terms and Services</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
