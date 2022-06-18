@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox</title>
+
+    <link rel="stylesheet" href="flexbox.css">
+
+</head>
+
+  <style>
+
+    *{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+    
+   body{
+background-color: black;
+  display: flex;
+     height: 100vh;
+     place-items: center;
+    }
+    
+    main{
+display: grid;
+    
+grid-template-areas:
+    'a a a a b' 
+    'c d d d d' 
+    'c e e e e' 
+  ;
+   gap: 10px;
+    }
+    
+    main div{
+border-radius: 2px;
+    padding: 2em;
+    text-align: center;}
+    
+    .a{
+      background-color: red;
+     grid-area: a; 
+    }
+
+    .b{
+      background-color: orange;
+      grid-area: b;
+    }
+
+    .c{
+      background-color: green;
+      grid-area: c;
+    }
+
+    .d{
+      background-color: skyblue;
+      grid-area: d;
+      }
+    
+  
+      .e{
+        background-color: skyblue;
+        grid-area: e;
+      }
+    
+    </style>
+  
+  <body>
+    <main>
+      <div class = "a"></div>
+      <div class = "b"></div>
+      <div class = "c"></div>
+      <div class = "d"></div>
+      <div class = "e"></div>
+      </main>
+</body>
+  
+  <><><><><><><><><><><><><><><><>
